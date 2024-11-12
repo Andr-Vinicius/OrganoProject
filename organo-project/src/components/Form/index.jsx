@@ -1,8 +1,15 @@
 import './Form.css'
 import TextField from '../TextField/TextField'
 import Dropdown from '../Dropdown'
+import Button from '../Button'
 
 const Form = () => {
+
+    const onSave = (event) => {
+        event.preventDefault()
+        console.log(event.target)
+        console.log("Form foi submetido")
+    }
 
     const teams = [
         'Poupatempo',
@@ -12,13 +19,13 @@ const Form = () => {
 
     return(
         <section className='form'>
-            <form>
+            <form onSubmit={onSave}>
                 <h2>Preencha os dados abaixo:</h2>
-                <TextField label="Nome" placeholder="Digite seu nome"/>
-                <TextField label="Cargo" placeholder="Digite seu cargo"/>
+                <TextField required={true} label="Nome" placeholder="Digite seu nome"/>
+                <TextField required={true} label="Cargo" placeholder="Digite seu cargo"/>
                 <TextField label="Imagem" placeholder="Digite o endereço da imagem"/>
-                <Dropdown label="Times" itens={teams}/>
-                <button>Enviar</button>
+                <Dropdown required={true} label="Times" itens={teams}/>
+                <Button children="Criar card"/>
             </form>
         </section>
     )
