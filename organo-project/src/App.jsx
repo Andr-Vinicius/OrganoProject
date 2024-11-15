@@ -8,24 +8,19 @@ function App() {
 
   const teams = [
     {
-      nome: 'Programação',
-      corPrimaria: '#D9F7E9',
-      corSecundaria: ' #57c278'
+      nome: 'Chapéus de Palha',
+      corPrimaria: '#F20530',
+      corSecundaria: '#F2B705'
     },
     {
-      nome: 'DevOps',
-      corPrimaria: '#D9F7E5',
-      corSecundaria: ' #57c274'
+      nome: 'Piratas do Barba Negra',
+      corPrimaria: '#404040',
+      corSecundaria: '#d3d3d3'
     },
     {
-      nome: 'Back-end',
-      corPrimaria: '#D9F7E5',
-      corSecundaria: ' #57c274'
-    },
-    {
-      nome: 'Front-end',
-      corPrimaria: '#D9F7E5',
-      corSecundaria: ' #57c274'
+      nome: 'Piratas Heart',
+      corPrimaria: '#F2B705',
+      corSecundaria: '#0D0D0D'
     }
   ]
 

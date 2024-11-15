@@ -32,8 +32,8 @@ const Form = (props) => {
                 <h2>Preencha os dados abaixo:</h2>
                 <TextField value={name} required={true} onChanged={value => setName(value)} label="Nome" placeholder="Digite seu nome"/>
                 <TextField value={position} required={true} onChanged={value => setPosition(value)} label="Cargo" placeholder="Digite seu cargo"/>
-                <TextField value={image} onChanged={value => setImage(value)} label="Imagem" placeholder="Digite o endereço da imagem"/>
-                <Dropdown value={team} onChanged={value => setTeam(value)} required={true} label="Times" itens={props.teams}/>
+                <TextField value={image} onChanged={value => setImage(value)} label="Imagem" placeholder="endereço da imagem"/>
+                <Dropdown value={team} onChanged={value => setTeam(value)} required={true} label="Tripulação" itens={props.teams}/>
                 <Button children="Criar card"/>
             </form>
         </section>

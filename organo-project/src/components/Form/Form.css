@@ -6,8 +6,9 @@
 
 .form form{
     max-width: 80%;
-    background-color: #4d4d4d;
+    background-color: #003087;
+    color: white;
     border-radius: 20px;
     padding: 36px 64px;
-    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.8);
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.6);
 }

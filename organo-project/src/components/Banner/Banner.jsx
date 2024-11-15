@@ -4,7 +4,7 @@ function Banner (){
     return(
         // No JSX é className ao invés de class
         <header className="banner">
-            <img src="/images/banner.jpg" alt="Banner principal"></img>
+            <img src="/images/banner.png" alt="Banner principal"></img>
         </header>
         // public - imagens estáticas
     )
