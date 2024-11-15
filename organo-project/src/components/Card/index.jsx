@@ -1,9 +1,9 @@
 import './Card.css'
 
-const Card = ({nome, imagem, cargo}) =>{
+const Card = ({nome, imagem, cargo, corFundo}) =>{
     return(
         <div className='card'>
-            <div className='cabecalho'>
+            <div className='cabecalho' style={{backgroundColor: corFundo}}>
                 <img src={imagem} alt='Imagem do card'/>
             </div>
             <div className='rodape'>

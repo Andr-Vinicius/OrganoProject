@@ -10,6 +10,8 @@ const Team = (props) =>{
             <h3 style={{borderBottomColor: props.corSecundaria,}}>{props.label}</h3>
             <div className='cards'>
                 {props.colaborador.map(colaborador => <Card 
+                    key={colaborador.name}
+                    corFundo={props.corSecundaria}
                     nome={colaborador.name} 
                     cargo={colaborador.position}
                     imagem={colaborador.image}
